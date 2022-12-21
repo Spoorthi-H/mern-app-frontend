@@ -36,7 +36,7 @@ const TaskList = () => {
         } catch (error) {
             toast.error("error.message");
             console.log(error);
-            isLoading(false);
+            setisLoading(false);
         }
     }
     useEffect(()=>{
