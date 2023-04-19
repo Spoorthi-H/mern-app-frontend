@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import {toast} from 'react-toastify' 
 import axios from 'axios';
 import { URL } from "../App";
-import loadingImg from "../assets/loader.gif"
+import loadingImg from "../assets/loader.gif";
 
 
 const TaskList = () => {
@@ -111,6 +111,7 @@ const TaskList = () => {
         const ctasks = tasks.filter((task)=>{return (task.completed===true)})
         setcompletedTasks(ctasks);
     },[tasks])
+
     return (
         <div>
             <h2>Task Manager</h2>
